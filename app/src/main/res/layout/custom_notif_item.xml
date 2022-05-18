@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/notification_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/notifications_icon" />
+
+    <!--    margin سالب عشان التيكست يبقى جوه    -->
+
+    <TextView
+        android:id="@+id/num_of_notification"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:layout_above="@id/notification_icon"
+        android:layout_toRightOf="@id/notification_icon"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginBottom="-10dp"
+        android:background="@drawable/custom_noti_shape"
+        android:text="5"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+         />
+</RelativeLayout>
